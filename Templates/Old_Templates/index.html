@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block main %}
+<ul>
+    {% for tasks in tasks %}
+        <li>{{ tasks.title }} created on {{ tasks.date }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
